@@ -241,7 +241,6 @@ h3{
 #plan{
     background-color: var(--yellow);
     padding-bottom: 10px;
-    
 }
 
 #plan section{
@@ -530,12 +529,6 @@ footer a:link{
 /*  MEDIA QUERIES  */
 
 @media (min-width: 760px){
-
-    body{
-        width: 660px;
-        padding-right: 60px;
-    }
-
     h1{
         font-size: 60px;
         color: var(--dark-gray);
@@ -565,17 +558,14 @@ footer a:link{
         grid-row: 2;
         margin:0;
         margin-left: 30px;
+        text-align: center;
     }
 
-    header a{
-        grid-column-start: 1;
-        grid-row-start: 1;
-        grid-row-end: span 3;
-    }
-
-    header a img{
-        height: 100%;
-        width: 100%;
+    #logo img{
+        position: absolute;
+        width: 30%;
+        height: auto;
+        left: 20px;
     }
 
     #main-content{
@@ -587,7 +577,8 @@ footer a:link{
     }
 
     h3{
-        font-size: 25px;
+        font-size: 40px;
+        margin-bottom: 10px;
     }
 
     /*  MENU  */
@@ -620,5 +611,17 @@ footer a:link{
     #img-grid picture{
         grid-column-start: 1;
         grid-column-end: span 2;
+    }
+
+    #plan div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #testimonials div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
